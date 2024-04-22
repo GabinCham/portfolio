@@ -7,6 +7,9 @@ import Brands from "./components/Brands";
 import "./App.css"; // Importez votre fichier CSS
 import Footer from "./components/Footer";
 import LinkMonocleStudio from "./components/LinkMonocleStudio";
+import MentionLegal from "./components/MentionLegal";
+import JoinOurTeam from "./components/JoinOurTeam";
+import Services from "./components/Services";
 
 
 
@@ -40,6 +43,15 @@ export default function App() {
           </Route>
           <Route exact path="/about">
             <About />
+          </Route>
+          <Route exact path="/legal">
+            <MentionLegal />
+          </Route>
+          <Route exact path="/join-our-team">
+            <JoinOurTeam />
+          </Route>
+          <Route exact path="/services">
+            <Services />
           </Route>
         </Switch>
       </div>

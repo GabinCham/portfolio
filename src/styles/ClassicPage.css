@@ -1,0 +1,26 @@
+.classic-page-container {
+    padding: 10%;
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .classic-page-title {
+    font-weight: bold;
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .classic-page-content {
+    /* Ajoutez des styles supplémentaires pour le contenu si nécessaire */
+  }
+
+  a {
+    text-decoration: none;
+    color: wheat;
+  }
+  

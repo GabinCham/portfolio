@@ -45,16 +45,33 @@ export default function Footer() {
           </p>
         </div>
         <div className="col col2">
-  <LinkMonocleStudio namePath={"/"}>Home</LinkMonocleStudio>
-  <LinkMonocleStudio namePath={"/projects"}>Projects</LinkMonocleStudio>
-  <LinkMonocleStudio namePath={"/about"}>About</LinkMonocleStudio>
-  <LinkMonocleStudio namePath={"/privacy-policy"}>Privacy Policy</LinkMonocleStudio>
+        <LinkMonocleStudio namePath={"/"}>Home</LinkMonocleStudio>
+        <LinkMonocleStudio namePath={"/about"}>About</LinkMonocleStudio>
+        <LinkMonocleStudio namePath={"/projects"}>Projects</LinkMonocleStudio>
+        <LinkMonocleStudio namePath={"/services"}>Services</LinkMonocleStudio>
 </div>
 <div className="col col3">
-  <LinkMonocleStudio namePath={"/services"}>Services</LinkMonocleStudio>
-  <LinkMonocleStudio namePath={"/terms-of-service"}>Terms of service</LinkMonocleStudio>
-  <LinkMonocleStudio namePath={"/join-our-team"}>Join our team</LinkMonocleStudio>
-  <LinkMonocleStudio namePath={"/partner-with-us"}>Partner with us</LinkMonocleStudio>
+ {/**
+  *   <LinkMonocleStudio namePath={"/partner-with-us"}>Partner with us</LinkMonocleStudio>
+
+  *  <LinkMonocleStudio namePath={"/terms-of-service"}>Terms of service</LinkMonocleStudio>
+
+ */} 
+  <a
+              href="https://www.linkedin.com/company/monoclestudio"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Linkedin</a>
+             <a
+              href="https://www.instagram.com/monoclestudiooo/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >Instagram</a>
+              <LinkMonocleStudio namePath={"/join-our-team"}>Join our team</LinkMonocleStudio>
+              <LinkMonocleStudio namePath={"/legal"}>Mention Legal</LinkMonocleStudio>
+
+
+                      
 </div>
 
         <div className="backdrop"></div>
