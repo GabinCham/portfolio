@@ -1,0 +1,128 @@
+.about-container {
+  padding: 0 15% 0 15%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("./../../public/assets/monocle-studio.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  background-attachment: fixed;
+}
+
+.h1-about {
+  color: var(--white-monocle-studio);
+  font-size: 8em;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.monster {
+  display: block;
+}
+
+.little-and-the-short {
+  display: flex;
+  align-items: center;
+}
+
+.the-short {
+  color: var(--white-monocle-studio);
+  width: 214px;
+  mix-blend-mode: difference;
+  text-transform: none;
+  margin-top: -15px;
+  margin-left: 20px;
+
+  p {
+    /* "the short" */
+    font-family: Diabolik-arrondis;
+    font-size: 20px;
+    color: var(--white-monocle-studio);
+    line-height: 0%;
+    margin: 0;
+  }
+
+  span {
+    font-family: "DM Sans";
+    font-size: 20px;
+    color: var(--white-monocle-studio);
+    margin-left: 5px;
+    line-height: 100%;
+  }
+}
+
+.the-long {
+  color: var(--white-monocle-studio);
+  width: 80%;
+  mix-blend-mode: difference;
+
+  p {
+    /* "the long" */
+    font-family: Diabolik-arrondis;
+    font-size: 35px;
+    color: var(--white-monocle-studio);
+    line-height: 0%;
+  }
+
+  span {
+    font-family: "DM Sans";
+    font-size: 20px;
+    color: var(--white-monocle-studio);
+    margin-left: 5px;
+    line-height: 115%;
+    margin: 0;
+  }
+}
+
+/* Media Queries */
+
+@media (max-width: 575.98px) {
+  .about-container {
+    padding: 0 5% 0 5%;
+  }
+  .the-short > p {
+    font-size: 30px;
+    margin-top: -50%;
+  }
+  .the-short > p > span {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 767.98px) and (orientation: landscape) {
+  .h1-about {
+    font-size: 4em;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .h1-about {
+    font-size: 6em;
+  }
+}
+
+@media (max-width: 1199.98px) {
+}
+
+@media (min-width: 1200px) {
+}
+
+@media (orientation: landscape) {
+}
+
+@media (orientation: portrait) {
+}
+
+@media (max-width: 575.98px) {
+  .about-container {
+    background-size: 130px;
+  }
+}
+
+.important-name {
+  color: black;
+  text-shadow: 0 0 4px var(--white-monocle-studio);
+}
