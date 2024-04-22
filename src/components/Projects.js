@@ -1,90 +1,93 @@
-import React from "react";
-import ProjectBlock from "./ProjectBlock";
-import "./../styles/Projects.css";
+import React, { useState } from "react";
+import "../styles/Projects.css";
 
-const Projects = () => {
-  
+
+export default function Projects() {
+  const [activeIndex, setActiveIndex] = useState(0);
+
+  const images = [
+    {
+      src: '/assets/brands_project/peugeot-him-low-min.webp',
+      title: 'PEUGEOT E-3008',
+      description: 'Intégration IHM',
+      categorie: 'Dev, Animations, Automobile',
+      outils: 'After Effect, Photoshop, Adobe Xd, Qt, Qml, 2D/3D',
+      additionnel: '* Credit video: Peugeot, transformation Webp par Monocle Studio.'
+
+    },
+    {
+      src: '/assets/brands_project/orro_2-min.webp',
+      title: 'ORRO EP',
+      description: 'Création cover pour Orro',
+      categorie: '3D, Animations, Music',
+      outils: 'After Effect, Photoshop',
+    },
+    {
+      src: '/assets/brands_project/204-min.png',
+      title: 'WAM CLOTHING',
+      description: 'E-commerce website',
+      categorie: 'After Effect, Dev, Animations, CMS, Mode',
+      outils: 'Wordpress, JS, CSS, PHP, After Effect',
+    },
+    {
+      src: '/assets/brands_project/dyson-tournage-low-min.webp',
+      title: 'DYSON',
+      description: 'Video',
+      categorie: 'Electroménager',
+      outils: 'Réalisation, image, montage, étalonnage',
+    },
+    {
+      src: '/assets/brands_project/dyson.webp',
+      title: 'Galaxy',
+    },
+  ];
+
+  const handleImageClick = (index) => {
+    setActiveIndex(index);
+  };
+
   return (
-    <div className="app-container">
-      <div className="scroll-container">
-        <ProjectBlock
-          projet="PEUGEOT E-3008"
-          description="Intégration IHM, Dev, Animations, Automobile"
-          categorie="After Effect, Photoshop, Adobe Xd, Qt, Qml, 2D/3D"
-          outils="*credit photo/video www.peugeot.fr"
-          textColor="#f8f9fa"
-          centerImage="/assets/brands_projet/peugeot-him-low-min.webp"
-          // backgroundImage="/assets/brands_projet/peugeot-background1-min.webp"
-         // backgroundColor="white"
-            backgroundColor="#1a1b1b"
-          animateBackground
-          scrollVertical={true}
-          backgroundSize="cover"
-          backgroundRepeat="repeat"
-          showShadow={false}
-          imageSize="60%"
-          maxWidth="none"
-        />
-        <ProjectBlock
-          projet="ORRO EP"
-          description="Création cover pour Orro"
-          categorie="3D, Animations, Music"
-          outils="After Effect, Photoshop"
-          textColor="rgb(86 203 55)"
-          centerImage="/assets/brands_projet/orro_2-min.webp"
-          // backgroundImage="/assets/brands_projet/orro-min.gif"
-          backgroundColor="white"
-           // backgroundColor="#1a1b1b"
-          animateBackground
-          scrollVertical={true}
-          backgroundSize="cover"
-          showShadow={false}
-          imageSize="50%"
-          maxWidth="none"
-          borderRadius="0% 10% 0% 10%"
-        />
+    <div className="projects-page">
+    <div id="container" className="image-gallery-container">
+      {images.map((image, index) => (
+        <div
+          key={index}
+          className={`img-container ${index === activeIndex ? "active" : ""}`}
+          style={{ backgroundImage: `url('${image.src}')`, border: "1px solid white" }}
+          onClick={() => handleImageClick(index)}
+        >
+          <h3>{image.title}</h3>
+        </div>
+      ))}
+    </div>
 
-        <ProjectBlock
-          projet="WAM CLOTHING"
-          description="E-commerce website"
-          categorie="After Effect, Dev, Animations, CMS, Mode"
-          outils="Wordpress, JS, CSS, PHP, After Effect"
-          textColor="#f8f9fa"
-          centerImage="/assets/brands_projet/204-min.png"
-          // backgroundImage="/assets/brands_projet/wam-min.png"
-        //  backgroundColor="white"
-          backgroundColor="#1a1b1b"
-          animateBackground
-          scrollVertical={false}
-          backgroundSize="auto"
-          backgroundRepeat="repeat"
-          showShadow={false}
-          imageSize="80%"
-          maxWidth="none"
-        />
+<div className="more">
 
-        <ProjectBlock
-          projet="DYSON"
-          description="Video"
-          categorie="Electroménager"
-          outils="Réalisation, image, montage, étalonnage"
-          textColor="#f8f9fa"
-          centerImage="/assets/brands_projet/dyson-tournage-low-min.webp"
-          // backgroundImage="/assets/brands_projet/dyson.webp"
-          backgroundColor="white"
-          //  backgroundColor="#1a1b1b"
-          animateBackground
-          scrollVertical={true}
-          backgroundSize="auto"
-          backgroundRepeat="repeat"
-          showShadow={false}
-          imageSize="60%"
-          maxWidth="none"
-          borderRadius="0% 10% 0% 10%"
-        />
-      </div>
+<div className="more-txt">
+<h2>Description</h2>
+<p>{images[activeIndex].description && <p>{images[activeIndex].description}</p>}
+</p>
+</div>
+
+<div className="more-txt">
+<h2>Categorie</h2>
+<p>{images[activeIndex].categorie && <p>{images[activeIndex].categorie}</p>}
+</p>
+</div>
+
+
+<div className="more-txt">
+<h2>Outils</h2>
+<p>{images[activeIndex].outils && <p>{images[activeIndex].outils}</p>}
+</p>
+</div>
+
+</div>
+
+<h5>{images[activeIndex].additionnel && <p>{images[activeIndex].additionnel}</p>}</h5>
+
+
+
     </div>
   );
-};
-
-export default Projects;
+}
