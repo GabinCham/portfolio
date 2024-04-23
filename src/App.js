@@ -11,10 +11,10 @@ import MentionLegal from "./components/MentionLegal";
 import JoinOurTeam from "./components/JoinOurTeam";
 import Services from "./components/Services";
 
-
-
 export default function App() {
   const [loading, setLoading] = useState(true);
+  const [currentPage, setCurrentPage] = useState(window.location.pathname);
+  console.log(currentPage);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -30,9 +30,36 @@ export default function App() {
         <div className="loading-screen">
           <img className="loading-image" src="./assets/eye-loader_web.svg" alt="Loading..." />
         </div>
-        <LinkMonocleStudio className="linknav link-home" namePath="/" nameLink=""><span className="sweet">(sweet)</span><span>Home</span></LinkMonocleStudio>
-        <LinkMonocleStudio className="linknav link-projects" namePath={"/projects"}>Projects</LinkMonocleStudio>
-        <LinkMonocleStudio className="linknav link-about" namePath={"/about"}>About</LinkMonocleStudio>
+        {/*
+       
+               <Switch>
+  <Route exact path="/">
+    <LinkMonocleStudio className={`linknav ${currentPage === '/' ? 'link-top-right' : 'link-home link-top-right'}`} namePath={"/services"}>Services</LinkMonocleStudio>
+  </Route>
+  <Route path={["/projects", "/about", "/legal", "/join-our-team", "/services"]}>
+    <LinkMonocleStudio className={`linknav ${currentPage === '/services' ? 'link-top-left' : 'link-home link-top-right'}`} namePath="/" nameLink=""><span className="sweet">(sweet)</span><span>Home</span></LinkMonocleStudio>
+  </Route>
+</Switch>
+
+  */}
+
+
+
+
+
+
+
+    {/** 
+     * <LinkMonocleStudio className="linknav link-top-left" namePath={"/projects"}>Projects</LinkMonocleStudio>
+    */}    
+
+        <LinkMonocleStudio className={`linknav ${currentPage === '/projects' ? 'link-top-left' : 'link-top-right'}`} namePath={"/projects"}>Projects</LinkMonocleStudio>
+
+        
+
+
+
+        <LinkMonocleStudio className="linknav link-bot-right" namePath={"/about"}>About</LinkMonocleStudio>
         <Switch>
           <Route exact path="/">
             <Home />
@@ -57,5 +84,5 @@ export default function App() {
       </div>
       <Footer />
     </Router>
-);
+  );
 }

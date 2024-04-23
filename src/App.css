@@ -6,28 +6,30 @@
   color: #f8f9fa;
   text-transform: uppercase;
   text-decoration: none;
+  position: fixed;
 }
 
 .link-home {
-  position: fixed;
-  top: 0;
-  left: 0;
   display: flex;
   align-items: flex-start;
 }
 
-.link-projects {
-  position: fixed;
+.link-top-left {
+  top: 0;
+  left: 0;
+}
+
+.link-top-right {
   top: 0;
   right: 0;
 }
 
-.link-about {
-  position: fixed;
+.link-bot-right {
   bottom: 0;
   right: 0;
   z-index: 1;
 }
+
 
 .sweet {
   font-size: 0.4em;
