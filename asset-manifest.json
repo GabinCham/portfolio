@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.69b93fb4.css",
-    "main.js": "/portfolio/static/js/main.2f6fcbf4.js",
+    "main.css": "/portfolio/static/css/main.9678fe76.css",
+    "main.js": "/portfolio/static/js/main.35685363.js",
     "static/js/872.21c392be.chunk.js": "/portfolio/static/js/872.21c392be.chunk.js",
     "static/js/227.667c4db5.chunk.js": "/portfolio/static/js/227.667c4db5.chunk.js",
     "static/js/526.a39faa7b.chunk.js": "/portfolio/static/js/526.a39faa7b.chunk.js",
@@ -31,8 +31,8 @@
     "static/media/instagram-icon-monocle-studio.svg": "/portfolio/static/media/instagram-icon-monocle-studio.3058e03c67811d2404e26f373d7c9d6c.svg",
     "static/media/linkn-icon-monocle-studio.svg": "/portfolio/static/media/linkn-icon-monocle-studio.bcbf785d668413c51e4c064ff4abe04e.svg",
     "index.html": "/portfolio/index.html",
-    "main.69b93fb4.css.map": "/portfolio/static/css/main.69b93fb4.css.map",
-    "main.2f6fcbf4.js.map": "/portfolio/static/js/main.2f6fcbf4.js.map",
+    "main.9678fe76.css.map": "/portfolio/static/css/main.9678fe76.css.map",
+    "main.35685363.js.map": "/portfolio/static/js/main.35685363.js.map",
     "872.21c392be.chunk.js.map": "/portfolio/static/js/872.21c392be.chunk.js.map",
     "227.667c4db5.chunk.js.map": "/portfolio/static/js/227.667c4db5.chunk.js.map",
     "526.a39faa7b.chunk.js.map": "/portfolio/static/js/526.a39faa7b.chunk.js.map",
@@ -44,7 +44,7 @@
     "787.5bed8fe7.chunk.js.map": "/portfolio/static/js/787.5bed8fe7.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.69b93fb4.css",
-    "static/js/main.2f6fcbf4.js"
+    "static/css/main.9678fe76.css",
+    "static/js/main.35685363.js"
   ]
 }
