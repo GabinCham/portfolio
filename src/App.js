@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
@@ -61,20 +61,20 @@ export default function App() {
         </LinkMonocleStudio>
 
         <Switch>
-          <Route exact path="/">
+          <Route exact path="/" component={Home}>
             <Home />
             <Brands />
           </Route>
-          <Route exact path="/projects">
+          <Route exact path="/projects" component={Projects}>
             <Projects />
           </Route>
-          <Route exact path="/about">
+          <Route exact path="/about" component={About}>
             <About />
           </Route>
-          <Route exact path="/legal">
+          <Route exact path="/legal" component={MentionLegal}>
             <MentionLegal />
           </Route>
-          <Route exact path="/join-our-team">
+          <Route exact path="/join-our-team" component={JoinOurTeam}>
             <JoinOurTeam />
           </Route>
           {/** 
