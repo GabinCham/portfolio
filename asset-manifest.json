@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/GabinCham/portfolio/static/css/main.d3f78f89.css",
-    "main.js": "/GabinCham/portfolio/static/js/main.47a72c68.js",
+    "main.js": "/GabinCham/portfolio/static/js/main.3c4d27fd.js",
     "static/js/872.21c392be.chunk.js": "/GabinCham/portfolio/static/js/872.21c392be.chunk.js",
     "static/js/227.667c4db5.chunk.js": "/GabinCham/portfolio/static/js/227.667c4db5.chunk.js",
     "static/js/526.a39faa7b.chunk.js": "/GabinCham/portfolio/static/js/526.a39faa7b.chunk.js",
@@ -32,7 +32,7 @@
     "static/media/linkn-icon-monocle-studio.svg": "/GabinCham/portfolio/static/media/linkn-icon-monocle-studio.bcbf785d668413c51e4c064ff4abe04e.svg",
     "index.html": "/GabinCham/portfolio/index.html",
     "main.d3f78f89.css.map": "/GabinCham/portfolio/static/css/main.d3f78f89.css.map",
-    "main.47a72c68.js.map": "/GabinCham/portfolio/static/js/main.47a72c68.js.map",
+    "main.3c4d27fd.js.map": "/GabinCham/portfolio/static/js/main.3c4d27fd.js.map",
     "872.21c392be.chunk.js.map": "/GabinCham/portfolio/static/js/872.21c392be.chunk.js.map",
     "227.667c4db5.chunk.js.map": "/GabinCham/portfolio/static/js/227.667c4db5.chunk.js.map",
     "526.a39faa7b.chunk.js.map": "/GabinCham/portfolio/static/js/526.a39faa7b.chunk.js.map",
@@ -45,6 +45,6 @@
   },
   "entrypoints": [
     "static/css/main.d3f78f89.css",
-    "static/js/main.47a72c68.js"
+    "static/js/main.3c4d27fd.js"
   ]
 }
