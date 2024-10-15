@@ -18,7 +18,7 @@ export default function Footer() {
               className="footer-img"
           src="./assets/icons/eye-monocle-studio-coeur-border-wh.svg" 
           alt="Monocle Studio Home"/></span>
-           by Monocle Studio
+           by Gabin Chameroy
           </p>
           <div className="social">
             <a

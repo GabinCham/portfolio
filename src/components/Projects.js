@@ -1,12 +1,14 @@
 import React, { useState } from "react";
 import "../styles/Projects.css";
 
+
+
 export default function Projects() {
   const [activeIndex, setActiveIndex] = useState(0);
   const images = [
     {
-      fallbackSrc: "./../../public/assets/brands_project/peugeot-10.svg",
-      videoSrc: "./../../public/assets/brands_project/peugeot-2.mp4",
+      fallbackSrc: "./assets/brands_project/peugeot-10.svg",
+      videoSrc: "./assets/brands_project/peugeot-2.mp4",
       title: "PEUGEOT E-3008",
       description: "Intégration IHM",
       categorie: "Dev, Animations, Automobile",
@@ -17,8 +19,8 @@ export default function Projects() {
       link: "https://www.peugeot.fr/nos-vehicules/nouveau-peugeot-3008/electrique.html",
     },
     {
-      src: "./../../public/assets/brands_project/orro.webp",
-      fallbackSrc: "./../../public/assets/brands_project/orro.gif",
+      src: "./assets/brands_project/orro.webp",
+      fallbackSrc: "./assets/brands_project/orro.gif",
       title: "ORRO EP",
       description: "Création cover pour Orro",
       categorie: "3D, Animations, Music",
@@ -27,8 +29,8 @@ export default function Projects() {
       link: "https://open.spotify.com/intl-fr/artist/5EBDnP2Vty9NEQL7fjHrE0",
     },
     {
-      src: "./../../public/assets/brands_project/204-min.png",
-      fallbackSrc: "./../../public/assets/brands_project/wam.svg",
+      src: "./assets/brands_project/204-min.png",
+      fallbackSrc: "./assets/brands_project/wam.svg",
       title: "WAM CLOTHING",
       description: "E-commerce website",
       categorie: "After Effect, Dev, Animations, CMS, Mode",
@@ -37,8 +39,8 @@ export default function Projects() {
       link: "https://wamclothing.fr",
     },
     {
-      fallbackSrc: "./../../public/assets/brands_project/dyson2.svg",
-      videoSrc: "./../../public/assets/brands_project/dyson.mp4",
+      fallbackSrc: "./assets/brands_project/dyson2.svg",
+      videoSrc: "./assets/brands_project/dyson.mp4",
       title: "DYSON",
       description: "Video",
       categorie: "Electroménager",
@@ -47,8 +49,8 @@ export default function Projects() {
       link: "https://www.instagram.com/p/C2NZ5hGiH_w/",
     },
     {
-      fallbackSrc: "./../../public/assets/brands_project/casba.svg",
-      videoSrc: "./../../public/assets/brands_project/CasbaTravaux.mov",
+      fallbackSrc: "./assets/brands_project/casba.svg",
+      videoSrc: "./assets/brands_project/CasbaTravaux.mov",
       title: "Casbâ",
       description: "Site web",
       categorie: "Dev",
