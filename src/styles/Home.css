@@ -45,6 +45,10 @@ p {
   height: 29vh;
 }
 
+.p-home-txt > p {
+margin: 0;
+}
+
 .btn-dynamique-home {
   margin-top: 1em;
 }

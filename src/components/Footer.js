@@ -63,7 +63,7 @@ export default function Footer() {
 
  */} 
   <a
-              href="https://www.linkedin.com/company/monoclestudio"
+              href="https://www.linkedin.com/in/gabin-chameroy-52b776193/"
               target="_blank"
               rel="noopener noreferrer"
             >Linkedin</a>

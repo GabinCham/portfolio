@@ -19,11 +19,7 @@ const Home = () => {
 
   return (
     <div className="home">
-      <Spline
-        className="spline"
-        scene="https://prod.spline.design/8psxax6fiFcs9LAz/scene.splinecode"
-      />
-
+      <Spline className="spline" scene="https://prod.spline.design/8psxax6fiFcs9LAz/scene.splinecode" />
       <div className="content">
         <h1 className="h1-home-txt">
           <span className="wellcome">Welcome to</span>
@@ -34,10 +30,12 @@ const Home = () => {
           {/**
           <h4>Welcome to Monocle Studio, where creativity knows no bounds.</h4>
           */}
+          <p>Le Monocle est un laboratoire créatif.</p>
           <p>
-            Collectif de créatifs passionnés. 
-            Le Monocle est pour nous un laboratoire créatif. Nous sommes un studio de création, nous aimons
-            créer des 
+            Nous sommes un studio de création,
+            </p>
+            <p>
+            nous créons vos 
             <span className="dynamique-txt">{texte}</span>
           </p>
         </div>
