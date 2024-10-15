@@ -60,6 +60,10 @@ export default function App() {
           <img src="./assets/monocle-studio.svg" alt="Monocle Studio Home" />
         </LinkMonocleStudio>
 
+        <div className="info-travaux">
+          Refonte en cours
+        </div>
+
         <Switch>
           <Route exact path="/" component={Home}>
             <Home />

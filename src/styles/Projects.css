@@ -90,7 +90,8 @@
 }
 
 .active-orro {
-  background: url("./../../public/assets/brands_project/orro.webp") no-repeat center / cover,  linear-gradient(332deg, #0000008f 0%, #032a0482 53%, #15332de3 100%) !important;
+  background: url("./../../public/assets/brands_project/orro.webp") no-repeat 35% center / cover !important;
+  backdrop-filter: blur(2px);
 }
 .inactive-orro {
   background-size: contain;
@@ -99,7 +100,7 @@
 
 
 .active-wam {
-  background: url("./../../public/assets/brands_project/204-min.png") no-repeat center / cover, #ffffffba !important;
+  background: url("./../../public/assets/brands_project/204-min.png") no-repeat 35% center / cover, #ffff !important;
 }
 
 .inactive-wam {
@@ -120,7 +121,7 @@
 }
 
 .active-casba {  
-    background: linear-gradient(70deg, #ffbd30 0%, #826bfe 53%, #fefefe7d 100%) !important;
+    background: white;
   }
 
 .inactive-casba, .inactive-peugeot, .inactive-dyson, .inactive-wam  {
