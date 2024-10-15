@@ -1,0 +1,81 @@
+:root {
+  --black-monocle-studio: #1a1b1b;
+  --white-monocle-studio: #f8f9fa;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "DM Sans";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+	background: linear-gradient(-45deg, #1c1b1b, #1a1a1a, #000000, #e8e8e8);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+  color: #000000;
+  min-height: 100vh;
+  /* background: linear-gradient(135deg, #ffffff 0%, #848484 53%, #5d5d5d 100%);*/
+  background: linear-gradient(135deg, #000000 0%, #303030 53%, #7a7a7a 100%);
+}
+
+body::before {
+  --line: hsla(0, 0%, 100%, 0.15);
+  --size: 60px;
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  background: linear-gradient(
+        90deg,
+        var(--line) 1px,
+        transparent 1px var(--size)
+      )
+      50% 50% / var(--size) var(--size),
+    linear-gradient(var(--line) 1px, transparent 1px var(--size)) 50% 50% /
+      var(--size) var(--size);
+  -webkit-mask: linear-gradient(-15deg, transparent 30%, rgb(0, 0, 0));
+  mask: linear-gradient(-15deg, transparent 30%, rgb(0, 0, 0));
+  top: 0;
+  z-index: -1;
+  transform: translate3d(0, 0, -100vmin);
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+@font-face {
+  font-family: Diabolik-gras-arrondis;
+  src: url(../public/fonts/Diabolik-BlackSmooth.woff2);
+}
+
+@font-face {
+  font-family: Diabolik-arrondis;
+  src: url(../public/fonts/Diabolik-BoldSmooth.woff2);
+}
+
+@font-face {
+  font-family: Diabolik;
+  src: url(../public/fonts/Diabolik-Regular-VF.ttf);
+}
+
+@font-face {
+  font-family: "DM Sans";
+  src: url(../public/fonts/DMSans-VariableFont_opsz\,wght.ttf);
+}
+
+h1,
+.navbar-links {
+  font-family: Diabolik-gras-arrondis !important;
+}

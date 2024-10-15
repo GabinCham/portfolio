@@ -1,0 +1,333 @@
+section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+
+.card {
+  padding: 24px;
+  border-radius: 15px;
+  box-shadow: inset 0 0 6px hsla(0, 0%, 100%, 0.2);
+  position: relative;
+  width: 20vw;
+  height: 95vh;
+  transition: all 1.7s ease;
+  margin: 28px auto;
+
+  p {
+    font-weight: bold;
+    text-align: center;
+  }
+}
+
+.card:nth-child(1) {
+  background: linear-gradient(312deg, #1c1b1b 53%, #15332d9e 100%);
+  color: wheat;
+}
+
+.card:nth-child(2) {
+  background: linear-gradient(312deg, #1c1b1b 53%, #15332d9e 100%);
+  color: wheat;
+}
+
+.card:nth-child(3) {
+  background: linear-gradient(312deg, #1c1b1b 53%, #15332d9e 100%);
+  color: wheat;
+}
+
+.card:hover,
+.branding-card:hover {
+  box-shadow: inset 0 0 30px hsl(0deg 0% 0%);
+}
+
+.card::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background: linear-gradient(45deg, #ffffff00, #ffffff 50%, #ffffff00);
+  top: -1px;
+  right: 20px;
+  transition: all 1.4s ease;
+}
+
+.card:hover::before,
+.branding-card:hover {
+  right: calc(50% - 20px);
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  background: linear-gradient(45deg, #ffffff00, #ffffff87 50%, #ffffff00);
+  bottom: -1px;
+  left: 20px;
+  transition: all 1.4s ease;
+}
+
+.card:hover::after,
+.branding-card:after {
+  left: calc(50% - 20px);
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4%;
+  font-size: 1.3vw;
+
+  span {
+    display: flex;
+  }
+}
+.img-monocle-list {
+  width: 1.45vw;
+  margin-right: 10px;
+}
+
+.avantages {
+  margin: 10% 0 10% 0;
+}
+
+.img-monocle-pizza {
+  width: 50px;
+}
+.branding {
+  --width-card-branding: 20vw;
+  font-size: 1.4vw;
+}
+
+.branding-card {
+  width: var(--width-card-branding);
+  max-width: 200px;
+  height: 65vh;
+  border-radius: 15px;
+  font-weight: 900;
+  transition: all 1.7s ease;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card-1 {
+  background: linear-gradient(312deg, #1c1b1b 53%, #15332d9e 100%);
+  color: wheat;
+}
+.card-2 {
+  background: linear-gradient(312deg, #1c1b1b 53%, #15332d9e 100%);
+  color: wheat;
+}
+.card-3 {
+  background: linear-gradient(312deg, #1c1b1b 53%, #15332d9e 100%);
+  color: wheat;
+}
+
+.branding-price {
+  width: var(--width-card-branding);
+  max-width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin-top: 7%;
+}
+
+.card-0 {
+  background-color: transparent;
+  color: #ffffff;
+  align-items: end;
+  text-align: right;
+  font-size: 1.5vw;
+  width: 20vw;
+  max-width: 500px;
+}
+
+.card-0-top-bot {
+  border: 0px;
+  color: transparent;
+}
+
+.section-title {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 10% 0 5% 0;
+}
+
+.line-separator {
+  position: relative;
+  text-align: center;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  z-index: 0;
+  margin: 10%;
+}
+
+.line-separator-img {
+  width: 100px;
+}
+
+.line-separator::after {
+  content: "";
+  height: 1px;
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+  background: #ffffff;
+}
+
+.line-separator > * {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  background-color: #fff;
+}
+
+.pourquoi {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30%;
+}
+
+.header-offre {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 3vh;
+}
+
+.nom-offre {
+  margin-bottom: 0;
+  text-transform: uppercase;
+  font-size: 1.8vw;
+  font-weight: 200;
+}
+
+.a-partir {
+  font-size: 1vw;
+}
+
+.forumule-offre {
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 1.5vw;
+}
+
+.price {
+  font-size: 2.7vw;
+  text-align: center;
+
+  span {
+    font-size: 25%;
+  }
+}
+
+
+@media only screen and (min-width: 469px), only screen and (max-width: 768px) {
+  .card {
+    width: 60vw;
+  }
+  li {
+    font-size: 2.5vw;
+  }
+  .price {
+    font-size: 6vw;
+  }
+  .nom-offre {
+    font-size: 5vw;
+  }
+  .forumule-offre {
+    font-size: 4.5vw;
+  }
+  .a-partir {
+    font-size: 2vw;
+  }
+  .img-monocle-list {
+    width: 3vw;
+  }
+}
+
+
+@media only screen and (max-width: 468px) {
+  .card {
+    width: 60vw;
+  }
+  li {
+    font-size: 4vw;
+  }
+  .price {
+    font-size: 6vw;
+  }
+  .nom-offre {
+    font-size: 5vw;
+  }
+  .forumule-offre {
+    font-size: 4.5vw;
+  }
+  .a-partir {
+    font-size: 2vw;
+  }
+  .img-monocle-list {
+    width: 4.45vw;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .card {
+    width: 25vw;
+  }
+  li {
+    font-size: 1.3vw;
+  }
+  .img-monocle-list {
+    width: 1.45vw;
+  }
+
+.header-offre {
+  margin-bottom: 3vh;
+}
+
+.nom-offre {
+  font-size: 1.8vw;
+}
+
+.a-partir {
+  font-size: 1vw;
+}
+
+.forumule-offre {
+  font-size: 1.5vw;
+}
+
+.price {
+  font-size: 2.7vw;
+}
+  
+}
+
+@media only screen and (min-width: 992px) {
+  .card {
+    width: 25vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .card {
+    width: 25vw;
+  }
+}

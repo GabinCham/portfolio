@@ -1,0 +1,141 @@
+.projects-page {
+  color: #fff;
+}
+
+#container {
+  margin: auto;
+  max-width: 56em;
+  height: 90vh;
+  display: flex;
+  gap: 1em;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1em;
+}
+
+.img-container {
+  width: calc(100% / 5);
+  height: 80%;
+  position: relative;
+  border-radius: 2em;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  transition: width 0.5s, transform 0.25s, box-shadow 0.25s;
+  cursor: pointer;
+  user-select: none;
+  border: 0.5px solid #ffffff30;
+}
+
+.img-container h3 {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 1em;
+  left: 0;
+  right: 0;
+  text-indent: 1em;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.img-container.active {
+  width: 200%;
+  transform: scale(1) !important;
+  box-shadow: 0 0 1.1em #202030 !important;
+}
+
+.img-container.active h3 {
+  opacity: 1;
+}
+
+.img-container:hover {
+  transform: scale(1.02);
+  box-shadow: 0 0 1em #555;
+}
+
+.more {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4vw;
+}
+
+.more-txt {
+  width: 200px;
+  height: 210px;
+  text-align: center;
+}
+
+.more-txt-title {
+  font-weight: 900;
+}
+
+
+.video-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.active-peugeot {
+
+}
+.inactive-peugeot {
+  
+}
+
+.active-orro {
+  background: url("./../../public/assets/brands_project/orro.webp") no-repeat center / cover,  linear-gradient(332deg, #0000008f 0%, #032a0482 53%, #15332de3 100%) !important;
+}
+.inactive-orro {
+  background-size: contain;
+  
+}
+
+
+.active-wam {
+  background: url("./../../public/assets/brands_project/204-min.png") no-repeat center / cover, #ffffffba !important;
+}
+
+.inactive-wam {
+}
+
+.active-dyson {
+}
+.inactive-dyson {
+
+}
+
+.active-casba {
+
+  video {
+    object-fit: contain !important;
+
+  }
+}
+
+.active-casba {  
+    background: linear-gradient(70deg, #ffbd30 0%, #826bfe 53%, #fefefe7d 100%) !important;
+  }
+
+.inactive-casba, .inactive-peugeot, .inactive-dyson, .inactive-wam  {
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+
+@keyframes scrollBackground {
+from {
+  background-position: 0 0; 
+}
+to {
+  background-position: 100% 0; 
+}
+}
