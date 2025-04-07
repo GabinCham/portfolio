@@ -20,7 +20,7 @@ const Home = () => {
     <div className="home">
       <Spline
         className="spline"
-        scene="https://prod.spline.design/8psxax6fiFcs9LAz/scene.splinecode"
+        scene="https://prod.spline.design/6Q1wHufGmgwyYzRG/scene.splinecode" 
       />
 
       <div className="content">
