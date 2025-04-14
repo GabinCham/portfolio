@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from "react";
-import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import Projects from "./components/Projects";
 import About from "./components/About";
 import Brands from "./components/Brands";
-import "./App.css"; // Importez votre fichier CSS
+import "./App.css";
 import Footer from "./components/Footer";
 import LinkMonocleStudio from "./components/LinkMonocleStudio";
-
-
 
 export default function App() {
   const [loading, setLoading] = useState(true);
@@ -27,9 +25,11 @@ export default function App() {
         <div className="loading-screen">
           <img className="loading-image" src="./assets/eye-loader_web.svg" alt="Loading..." />
         </div>
-        <LinkMonocleStudio className="linknav link-home" namePath="/" nameLink=""><span className="sweet">(sweet)</span><span>Home</span></LinkMonocleStudio>
-        <LinkMonocleStudio className="linknav link-projects" namePath={"/projects"}>Projects</LinkMonocleStudio>
-        <LinkMonocleStudio className="linknav link-about" namePath={"/about"}>About</LinkMonocleStudio>
+        <nav className="navigation">
+          <LinkMonocleStudio className="linknav link-home" namePath="/"><span className="sweet">(sweet)</span><span>Home</span></LinkMonocleStudio>
+          <LinkMonocleStudio className="linknav link-projects" namePath="/projects">Projects</LinkMonocleStudio>
+          <LinkMonocleStudio className="linknav link-about" namePath="/about">About</LinkMonocleStudio>
+        </nav>
         <Switch>
           <Route exact path="/">
             <Home />

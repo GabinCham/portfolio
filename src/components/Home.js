@@ -8,21 +8,16 @@ const Home = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const options = ["Web site", "Video Clip", "Logo"];
+      const options = ["Web sites", "Video Clips", "Logos"];
       const nouvelTexte = options[Math.floor(Math.random() * options.length)];
       setTexte("pour vos " + nouvelTexte + ".");
-    }, 1000);
+    }, 1500);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className="home">
-      <Spline
-        className="spline"
-        scene="https://prod.spline.design/6Q1wHufGmgwyYzRG/scene.splinecode" 
-      />
-
+    <section className="home">
       <div className="content">
         <h1 className="h1-home-txt">
           <span>Welcome to</span>
@@ -34,11 +29,18 @@ const Home = () => {
           graphic design studio, and we love collaborating with a {texte}
         </p>
 
-        <div>
+        <div className="cta-container">
           <BoutonDynamique />
         </div>
       </div>
-    </div>
+
+      <Spline
+        className="spline"
+        scene="https://prod.spline.design/8psxax6fiFcs9LAz/scene.splinecode" 
+        width={500}
+        height={500}
+     />
+    </section>
   );
 };
 

@@ -1,3 +1,11 @@
+.navigation {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
+}
+
 .linknav {
   margin: 3%;
   font-size: 12px;
@@ -6,6 +14,7 @@
   color: #f8f9fa;
   text-transform: uppercase;
   text-decoration: none;
+  pointer-events: auto;
 }
 
 .link-home {
